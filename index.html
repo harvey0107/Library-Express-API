@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Example</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Do not add `link` tags-->
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+      <!-- Do not add `script` tags-->
+      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+    </head>
+    <body>
+      <h1>Harvey's Library</h1>
+
+      <section>
+        <h3>Get All Book</h3>
+        <button id="get-all-books">Go!</button>
+      </section>
+
+      <section>
+        <h3>Get single book</h3>
+        <form id="get-single-book">
+          <input type="text" placeholder="Book ID" name="book[id]"/>
+          <input type="submit" value="Get Single Book"/>
+        </form>
+      </section>
+
+      <p id="message"></p>
+
+      <section>
+        <h3>Delete a book</h3>
+        <form id="delete-book">
+          <input type="text" placeholder="Book ID" name="book[id]" />
+          <input type="submit" value="Delete Book">
+        </form>
+      </section>
+        <div id='content'></div>
+    </body>
+</html>
